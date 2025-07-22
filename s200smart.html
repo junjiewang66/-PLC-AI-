@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西门子200Smart编程助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-nav">
+                <button class="back-button" onclick="goBack()">← 返回首页</button>
+                <div class="header-content">
+                    <h1>西门子200Smart编程助手</h1>
+                    <p>专业的S7-200 SMART PLC编程指导</p>
+                </div>
+            </div>
+        </header>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        您好！我是西门子200Smart编程专家助手，专门为S7-200 SMART系列PLC提供编程支持。我可以帮助您：
+                        <ul>
+                            <li>梯形图编程设计与优化</li>
+                            <li>指令表编程指导</li>
+                            <li>I/O地址分配建议</li>
+                            <li>定时器和计数器应用</li>
+                            <li>通信程序设计</li>
+                            <li>故障诊断与调试</li>
+                            <li>程序结构化设计</li>
+                        </ul>
+                        请详细描述您的PLC编程需求，我将为您提供专业的程序设计方案！
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="input-group">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="请输入您的S7-200 SMART编程需求..."
+                        rows="3"
+                    ></textarea>
+                    <button id="sendButton" onclick="sendMessage()">
+                        <span>发送</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <span>AI正在思考中...</span>
+        </div>
+    </div>
+
+    <script src="s200smart-script.js"></script>
+</body>
+</html>

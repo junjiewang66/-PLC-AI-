@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLC编程AI助手</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>俊杰工控PLC</h1>
+            <h2>PLC编程AI助手</h2>
+            <p>智能PLC编程辅助工具</p>
+            <div class="developer-info">
+                <p>研发人：王俊杰</p>
+            </div>
+        </header>
+        
+        <div class="plc-selection">
+            <h2>请选择您的PLC型号</h2>
+            <div class="button-grid">
+                <button class="plc-button" onclick="goToPage('s200smart')">
+                    <div class="button-icon">🔧</div>
+                    <div class="button-title">西门子200Smart编程</div>
+                    <div class="button-description">适用于S7-200 SMART系列PLC编程</div>
+                </button>
+                
+                <button class="plc-button" onclick="goToPage('s1200')">
+                    <div class="button-icon">⚙️</div>
+                    <div class="button-title">西门子1200编程</div>
+                    <div class="button-description">适用于S7-1200系列PLC编程</div>
+                </button>
+                
+                <button class="plc-button" onclick="goToPage('s1500')">
+                    <div class="button-icon">🏭</div>
+                    <div class="button-title">西门子1500编程</div>
+                    <div class="button-description">适用于S7-1500系列PLC编程</div>
+                </button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>选择对应的PLC型号，获得专业的编程指导和技术支持</p>
+        </footer>
+    </div>
+
+    <script>
+        function goToPage(plcType) {
+            switch(plcType) {
+                case 's200smart':
+                    window.location.href = 's200smart.html';
+                    break;
+                case 's1200':
+                    window.location.href = 's1200.html';
+                    break;
+                case 's1500':
+                    window.location.href = 's1500.html';
+                    break;
+                default:
+                    alert('该页面正在开发中...');
+            }
+        }
+    </script>
+</body>
+</html>

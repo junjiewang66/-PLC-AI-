@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西门子1200编程助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-nav">
+                <button class="back-button" onclick="goBack()">← 返回首页</button>
+                <div class="header-content">
+                    <h1>西门子1200编程助手</h1>
+                    <p>专业的S7-1200 PLC SCL编程指导</p>
+                </div>
+            </div>
+        </header>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        您好！我是西门子1200编程专家助手，专门为S7-1200系列PLC提供SCL编程支持。我可以帮助您：
+                        <ul>
+                            <li>SCL结构化控制语言编程</li>
+                            <li>中文变量命名规范设计</li>
+                            <li>CASE分支语句标准语法</li>
+                            <li>TON定时器规范调用</li>
+                            <li>变量声明区域设计</li>
+                            <li>程序块结构化设计</li>
+                            <li>数据类型和函数应用</li>
+                            <li>通信和诊断功能</li>
+                        </ul>
+                        请详细描述您的S7-1200 SCL编程需求，我将严格按照西门子SCL标准语法为您提供专业的程序设计方案！
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="input-group">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="请输入您的S7-1200 SCL编程需求..."
+                        rows="3"
+                    ></textarea>
+                    <button id="sendButton" onclick="sendMessage()">
+                        <span>发送</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <span>AI正在思考中...</span>
+        </div>
+    </div>
+
+    <script src="s1200-script.js"></script>
+</body>
+</html>

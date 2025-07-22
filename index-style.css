@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
+    background: linear-gradient(45deg, #fff, #f0f8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    font-weight: 600;
+    color: white;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.developer-info {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.developer-info p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    opacity: 0.95;
+}
+
+.plc-selection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plc-selection h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.plc-button {
+    background: white;
+    border: none;
+    border-radius: 20px;
+    padding: 40px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plc-button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+}
+
+.plc-button:active {
+    transform: translateY(-5px);
+}
+
+.button-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.button-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.button-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+    max-width: 250px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    opacity: 0.8;
+}
+
+footer p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .plc-selection h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .button-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .plc-button {
+        padding: 30px 20px;
+        min-height: 200px;
+    }
+    
+    .button-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .button-title {
+        font-size: 1.3rem;
+    }
+    
+    .button-description {
+        font-size: 0.9rem;
+    }
+    
+    footer {
+        margin-top: 40px;
+    }
+    
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .plc-selection h2 {
+        font-size: 1.3rem;
+    }
+    
+    .plc-button {
+        padding: 25px 15px;
+        min-height: 180px;
+    }
+    
+    .button-icon {
+        font-size: 2.5rem;
+    }
+    
+    .button-title {
+        font-size: 1.2rem;
+    }
+}
